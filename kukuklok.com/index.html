@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;800&family=Quicksand&display=swap" rel="stylesheet">
+<!-- Mirrored from kukuklok.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Sep 2021 03:35:32 GMT -->
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Online Alarm Clock - Designed to wake you up. Simple and beautiful.">
+    <meta name="keywords" content="online alarm clock, alarm clock, online alarm, online clock, internet alarm clock, alarm clock software">
+
+    <meta name="publisher" content="Istok Pavlovic">
+    <meta name="author" content="Istok Pavlovic">
+    <meta name="copyright" content="Copyright  2008 Istok Pavlovic">
+    <meta property="og:image" content="http://www.kukuklok.com/images/fbogimage.jpg">
+
+    <link rel="shortcut icon" href="klokicon.ico">
+
+    <title>Online Alarm Clock</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <!--320-->
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <![endif]-->
+    <!-- header bidding code -->
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div id="main">
+
+        <div id="application">
+
+            <div id="wake_me_up_text" class="clock_text">Wake me up at:</div>
+
+            <div id="select_time">
+                <div id="current_time">Current time is: <span>00:00:00</span></div>
+
+                <div id="hours_one" class="digit">0</div>
+                <div id="hours_two" class="digit">0</div>
+                <div id="divider">:</div>
+                <div id="minutes_one" class="digit">0</div>
+                <div id="minutes_two" class="digit">0</div>
+
+                <div id="button_theme_night" class="theme_button">Night Mode</div>
+                <div id="button_theme_day" class="theme_button none">Day Mode</div>
+                <div id="button_plus_hour" class="clock_button"></div>
+                <div id="button_minus_hour" class="clock_button"></div>
+                <div id="button_plus_min" class="clock_button"></div>
+                <div id="button_minus_min" class="clock_button"></div>
+                <div id="select_time_overlay"></div>
+            </div>
+            <!-- end select_time -->
+
+            <div id="with_sound_text" class="clock_text">with the sound of:</div>
+
+            <div id="select_sound">
+                <div id="choose_sound_left" class="clock_button"></div>
+                <div id="choose_sound_right" class="clock_button"></div>
+                <div id="preview_sound">
+                    <div id="button_preview_sound" class="clock_button"></div>
+                    <div class="text_preview_sound">preview sound</div>
+                </div>
+                <div id="preview_stop" class="none">
+                    <div id="button_preview_stop" class="clock_button"></div>
+                    <div class="text_preview_sound">stop sound</div>
+                </div>
+                <div id="sound_cock" class="sound_container">
+                    <div class="sound_name">Cockerel</div>
+                    <div class="sound_image"></div>
+                </div>
+                <div id="sound_clock" class="sound_container none">
+                    <div class="sound_name">Classic clock</div>
+                    <div class="sound_image"></div>
+                </div>
+                <div id="sound_electronic" class="sound_container none">
+                    <div class="sound_name">Electronic</div>
+                    <div class="sound_image"></div>
+                </div>
+                <div id="sound_guitar" class="sound_container none">
+                    <div class="sound_name">Heavy metal guitar</div>
+                    <div class="sound_image"></div>
+                </div>
+                <div id="sound_military" class="sound_container none">
+                    <div class="sound_name">Military Trumpet</div>
+                    <div class="sound_image"></div>
+                </div>
+                <div id="sound_alien" class="sound_container none">
+                    <div class="sound_name">Alien Invasion</div>
+                    <div class="sound_image"></div>
+                </div>
+                <div id="select_sound_overlay"></div>
+            </div>
+            <!-- end select_sound -->
+
+
+            <div id="set_alarm_button" class="button">Set Alarm</div>
+
+            <div id="alarm_set" class="none">
+                <div id="alarm_set_text">Alarm is set!</div>
+                <div id="cancel_button" class="button">Cancel</div>
+            </div>
+
+            <div id="alarm_start" class="none">
+                <div id="wakeup">Wake up!</div>
+                <div id="stopor">
+                    <div id="stop_alarm_button" class="button">Stop</div>
+                    <div id="or">or</div>
+                </div>
+                <div id="snooze_button" class="button">Snooze 10 minutes more</div>
+            </div>
+
+            <audio src="audio/cock.mp3" id="audio_cock" preload="auto" loop></audio>
+            <audio src="audio/clock.mp3" id="audio_clock" preload="auto" loop></audio>
+            <audio src="audio/electronic.mp3" id="audio_electronic" preload="auto" loop></audio>
+            <audio src="audio/guitar.mp3" id="audio_guitar" preload="auto" loop></audio>
+            <audio src="audio/military.mp3" id="audio_military" preload="auto" loop></audio>
+            <audio src="audio/alien.mp3" id="audio_alien" preload="auto" loop></audio>
+
+
+
+        </div>
+        <!-- application closed -->
+
+
+
+
+        <div id="ads">
+
+            <div id='div-gpt-ad-1558610619536-0'>
+                <script>
+                    googletag.cmd.push(function() {
+                        googletag.display('div-gpt-ad-1558610619536-0');
+                    });
+                </script>
+            </div>
+
+            <!--
+
+-->
+
+
+        </div>
+
+        <div id="facebookwide">
+            <div class="fbheadline">Like Kuku Klok on Facebook:</div>
+            <div class="fb-like" data-href="https://www.facebook.com/kukuklok/" data-width="400" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+        </div>
+
+        <div id="facebooknarrow">
+            <div class="fbheadline">Like Kuku Klok on Facebook:</div>
+            <div class="fb-like" data-href="https://www.facebook.com/kukuklok/" data-width="150" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+        </div>
+
+
+    </div>
+    <!-- main closed -->
+
+    <footer>
+
+        <div class="footer_text">
+            <p>Once loaded, the online alarm clock will work even if Internet connection goes down. </p>
+            <p>Send your comments and ideas about improvement to shout@kukuklok.com. </p>
+            <p>Copyright Kuku Klok © 2016. Swiss Made. &nbsp;&nbsp;<a href="privacy-policy.html"><strong>Privacy Policy</strong></a></p>
+        </div>
+
+    </footer>
+
+    <div id="daywrapper"></div>
+    <div id="nightwrapper"></div>
+
+</body>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.animate-colors-min.js"></script>
+<script src="js/custom5e1f.js?v=2"></script>
+
+
+
+
+
+<!-- Mirrored from kukuklok.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Sep 2021 03:35:53 GMT -->
+
+</html>
