@@ -18,11 +18,14 @@ timeout = 1000;
 ten =  60000
 //!alarm-set
 time_update();
-document.querySelector("#submit").addEventListener("click", setAlarm);
-
+document.querySelector("#submit").addEventListener("click", Alarm);
+setHour = document.querySelector("#hour").value;
+setMinutes = document.querySelector("#minutes").value;
+function Alarm () {
+function reset(){
+  timeout = 1000;
+}
 function setAlarm() {
-  setHour = document.querySelector("#hour").value;
-  setMinutes = document.querySelector("#minutes").value;
   if (setHour == Rawhours) {
     if (setMinutes == Rawminutes) {
       console.log("true");
@@ -31,7 +34,7 @@ function setAlarm() {
   }
   //!play
   function play() {
-    audio = new Audio("beep-01a.wav");
+    audio = new Audio("https://www.soundjay.com/buttons/beep-01a.wav");
     audio.play();
 
   }
@@ -44,6 +47,7 @@ function setAlarm() {
     setAlarm();
   }, timeout);
 
+}
 }
 
 
